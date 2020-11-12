@@ -14,16 +14,16 @@ user = {
   phone: 654321987
 };
 
+function isNumber<T>(data: T) {
+  return typeof data === "number";
+}
+
 function getData<T>(data: T): void {
   if (isNumber(data)) {
     console.log("Mi teléfono es " + data);
   } else {
     console.log("Mi nombre es " + data);
   }
-}
-
-function isNumber<T>(data: T) {
-  return typeof data === "number";
 }
 
 getData<string>(user.name);

@@ -11,7 +11,7 @@ let user: UserData;
 user = {
   name: "ARBOLEDAS",
   age: 28,
-  phone: 654321987
+  phone: 912327689
 };
 
 function Phone<P>(data: P) {

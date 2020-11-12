@@ -9,22 +9,20 @@ import { UserData } from "./user-data";
 
 let user: UserData;
 user = {
-  name: "juan",
-  age: 23,
+  name: "ARBOLEDAS",
+  age: 28,
   phone: 654321987
 };
 
-function isNumber<T>(data: T) {
-  return typeof data === "number";
+function Phone<P>(data: P) {
+  return typeof data == "number";
 }
-
-function getData<T>(data: T): void {
-  if (isNumber(data)) {
-    console.log("Mi teléfono es " + data);
+function getData<D>(data: D): void {
+  if (Phone(data)) {
+    console.log("Mi Número de teléfono es: " + data);
   } else {
-    console.log("Mi nombre es " + data);
+    console.log("Mi nombre es: " + data);
   }
 }
-
 getData<string>(user.name);
 getData<number>(user.phone);
